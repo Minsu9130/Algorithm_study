@@ -21,9 +21,7 @@ public class NumberExtract {
 		str = str.replaceAll("[^0-9]", "");
 		
 		while(true) {
-			System.out.println(str);
 			if (str.charAt(0) == '0') {
-				System.out.println(str);
 				str = str.substring(1);
 			}
 			if (str.charAt(0) != '0')
