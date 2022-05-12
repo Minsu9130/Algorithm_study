@@ -2,6 +2,7 @@ package DFS_BFS활용;
 
 import java.util.Scanner;
 
+// 수열 추측하기
 public class ProgressionGuess {
 	
 	static int[] b, p, ch;
