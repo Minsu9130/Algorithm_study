@@ -45,16 +45,10 @@ public class MeetingRoom {
 		Collections.sort(arr);
 		
 		
-		int end = Integer.MIN_VALUE;
+		int end = 0;
 		for(Time ob : arr) {
 			System.out.println(ob.s + " " + ob.e);
-			
-			// 정렬된 배열의 첫번째 끝나는 시간을 저장하기 위해
-			if(end == Integer.MIN_VALUE) {
-				end = ob.e;
-				answer++;
-			}
-			
+									
 			// 다음으로 오는 배열의 시작시간과 끝시간이 같거나 크다면 회의실 count를 증가시키고 끝나는 시간 저장
 			if(end <= ob.s ) {
 				answer++;
